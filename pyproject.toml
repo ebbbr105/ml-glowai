@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "glowai-thermal-ml"
+version = "0.1.0"
+description = "Research-only comparison of ordinal thermal-sensation models and personal adaptation"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3", "pandas>=2.1,<3", "scipy>=1.11,<2", "scikit-learn>=1.4,<2", "statsmodels>=0.14,<0.15", "openpyxl>=3.1,<4", "xgboost>=2.0,<4", "catboost>=1.2,<2"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,24 @@
+# Third-party source data: download from the original publication
+/data/raw/*
+!/data/raw/.gitkeep
+# Row-level survey predictions, derivatives, artifacts and trained models
+/results/*predictions*.csv
+/results/cleaned_data.csv
+*.joblib
+*.pkl
+# Local environment/IDE
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.ipynb_checkpoints/
+.env
+.env.*
+.DS_Store
+.idea/
+.vscode/
+# Local scratch
+*.log
+# Windows metadata
+*:Zone.Identifier
